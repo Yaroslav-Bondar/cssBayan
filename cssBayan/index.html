@@ -8,20 +8,21 @@
   <title>Accordion</title>
 </head>
 <body>
-  <main class="page">
-    <section class="page__container container">
-      <article class="meme">
-        <header class="meme__header">
-          <h1 class="meme__title">SOLID</h1>
-          <p class="meme__subtitle">
-            In software engineering, SOLID is a mnemonic acronym for five design principles intended 
-            to make object-oriented designs more understandable, flexible, and maintainable. 
-            The principles are a subset of many principles promoted by American software engineer 
-            and instructor Robert C. Martin, first introduced 
-            in his 2000 paper Design Principles and Design Patterns discussing software rot.
-          </p>
-        </header>
-        <div class="meme__content accordion">
+  <div class="wrapper">
+    <main class="page">
+      <section class="page__container container">
+        <article class="meme">
+          <header class="meme__header">
+            <h1 class="meme__title">SOLID</h1>
+            <p class="meme__subtitle">
+              In software engineering, SOLID is a mnemonic acronym for five design principles intended 
+              to make object-oriented designs more understandable, flexible, and maintainable. 
+              The principles are a subset of many principles promoted by American software engineer 
+              and instructor Robert C. Martin, first introduced 
+              in his 2000 paper Design Principles and Design Patterns discussing software rot.
+            </p>
+          </header>
+          <div class="meme__content accordion">
             <div class="accordion__container">
               <div class="accordion__item">
                 <input id="bayan-01" type="radio" name="bayan" checked>
@@ -34,8 +35,9 @@
                     <span class="accordion__icon"></span>
                   </span>
                   <span class="accordion__content">
-                    content
-                    <img src="assets/img/meme/single-responsibility.jpg" alt="single-responsibility-principle" class="accordion__img">
+                    <span class="accordion__img">
+                      <img src="assets/img/meme/single-responsibility.webp" alt="single-responsibility-principle" class="accordion__img-item">
+                    </span>
                   </span>
                 </label>
               </div>
@@ -49,7 +51,9 @@
                     <span class="accordion__icon"></span>
                   </span>
                   <span class="accordion__content">
-                    <img src="assets/img/meme/open-closed.jpg" alt="open-closed-principle" class="accordion__img">
+                    <span class="accordion__img">
+                      <img src="assets/img/meme/open-closed.jpg" alt="open-closed-principle" class="accordion__img-item">
+                    </span>
                   </span>
                 </label>
               </div>
@@ -64,7 +68,9 @@
                     <span class="accordion__icon"></span>
                   </span>
                   <span class="accordion__content">
-                    <img src="assets/img/meme/liskov-substitution.webp" alt="liskov-substitution-principle" class="accordion__img">
+                    <span class="accordion__img">
+                      <img src="assets/img/meme/liskov-substitution.webp" alt="liskov-substitution-principle" class="accordion__img-item">
+                    </span>
                   </span>
                 </label>
               </div>
@@ -78,7 +84,9 @@
                     <span class="accordion__icon"></span>
                   </span>
                   <span class="accordion__content">
-                    <img src="assets/img/meme/interface-segregation.jpg" alt="interface-segregation-principle" class="accordion__img">
+                    <span class="accordion__img">
+                      <img src="assets/img/meme/interface-segregation.jpg" alt="interface-segregation-principle" class="accordion__img-item">
+                    </span>
                   </span>
                 </label>
               </div>
@@ -92,14 +100,17 @@
                     <span class="accordion__icon"></span>
                   </span>
                   <span class="accordion__content">
-                    <img src="assets/img/meme/dependency-inversion.jpg" alt="dependency-inversion-principle" class="accordion__img">
+                    <span class="accordion__img">
+                      <img src="assets/img/meme/dependency-inversion.jpg" alt="dependency-inversion-principle" class="accordion__img-item">
+                    </span>
                   </span>
                 </label>
               </div>
             </div>
-        </div>
-      </article>
-    </section>
-  </main>
+          </div>
+        </article>
+      </section>
+    </main>
+  </div>
 </body>
 </html>
