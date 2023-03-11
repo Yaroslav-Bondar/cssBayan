@@ -1,0 +1,7 @@
+.meme__content {
+  display: flex;
+  justify-content: center;
+}
+.meme__header {
+  text-align: center;
+}

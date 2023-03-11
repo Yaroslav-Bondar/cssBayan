@@ -1,0 +1,16 @@
+body {
+  height: 2000px;
+  background-color: dimgrey;
+}
+.wrapper {
+  max-width: 1920px;
+  min-width: 320px;
+  min-height: 100%;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
