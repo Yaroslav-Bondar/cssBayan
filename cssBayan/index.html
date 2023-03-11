@@ -8,39 +8,100 @@
   <title>Accordion</title>
 </head>
 <body>
-  <div class="accordion">
-    <div class="accordion__container">
-      <div class="accordion__item">
-        <input id="bayan-01" type="radio" name="bayan" checked>
-        <label class="accordion__label" for="bayan-01">
-          <span class="accordion__panel">
-            <b class="accordion__title">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-            </b>
-            <span class="accordion__icon"></span>
-          </span>
-          <span class="accordion__content">
-            content
-            <img src="" alt="" class="accordion__img">
-          </span>
-        </label>
-      </div>
-      <div class="accordion__item">
-        <input id="bayan-02" type="radio" name="bayan">
-        <label class="accordion__label" for="bayan-02">
-          <span class="accordion__panel">
-            <b class="accordion__title">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-            </b>
-            <span class="accordion__icon"></span>
-          </span>
-          <span class="accordion__content">
-            content
-            <img src="" alt="" class="accordion__img">
-          </span>
-        </label>
-      </div>
-    </div>
-  </div>
+  <main class="page">
+    <section class="page__container container">
+      <article class="meme">
+        <header class="meme__header">
+          <h1 class="meme__title">SOLID</h1>
+          <p class="meme__subtitle">
+            In software engineering, SOLID is a mnemonic acronym for five design principles intended 
+            to make object-oriented designs more understandable, flexible, and maintainable. 
+            The principles are a subset of many principles promoted by American software engineer 
+            and instructor Robert C. Martin, first introduced 
+            in his 2000 paper Design Principles and Design Patterns discussing software rot.
+          </p>
+        </header>
+        <div class="meme__content accordion">
+          <!-- <div class="accordion"> -->
+            <div class="accordion__container">
+              <div class="accordion__item">
+                <input id="bayan-01" type="radio" name="bayan" checked>
+                <label class="accordion__label" for="bayan-01">
+                  <span class="accordion__panel">
+                    <b class="accordion__title">
+                      The Single-responsibility principle: "There should never be more than one reason for a class to change. 
+                      In other words, every class should have only one responsibility. 
+                    </b>
+                    <span class="accordion__icon"></span>
+                  </span>
+                  <span class="accordion__content">
+                    content
+                    <img src="assets/img/meme/single-responsibility.jpg" alt="single-responsibility-principle" class="accordion__img">
+                  </span>
+                </label>
+              </div>
+              <div class="accordion__item">
+                <input id="bayan-02" type="radio" name="bayan">
+                <label class="accordion__label" for="bayan-02">
+                  <span class="accordion__panel">
+                    <b class="accordion__title">
+                      The Open–closed principle: "Software entities ... should be open for extension, but closed for modification." 
+                    </b>
+                    <span class="accordion__icon"></span>
+                  </span>
+                  <span class="accordion__content">
+                    <img src="assets/img/meme/open-closed.jpg" alt="open-closed-principle" class="accordion__img">
+                  </span>
+                </label>
+              </div>
+              <div class="accordion__item">
+                <input id="bayan-02" type="radio" name="bayan">
+                <label class="accordion__label" for="bayan-02">
+                  <span class="accordion__panel">
+                    <b class="accordion__title">
+                      The Liskov substitution principle: "Functions that use pointers or references 
+                      to base classes must be able to use objects of derived classes without knowing it."
+                    </b>
+                    <span class="accordion__icon"></span>
+                  </span>
+                  <span class="accordion__content">
+                    <img src="assets/img/meme/liskov-substitution.webp" alt="liskov-substitution-principle" class="accordion__img">
+                  </span>
+                </label>
+              </div>
+              <div class="accordion__item">
+                <input id="bayan-02" type="radio" name="bayan">
+                <label class="accordion__label" for="bayan-02">
+                  <span class="accordion__panel">
+                    <b class="accordion__title">
+                      The Interface segregation principle: "Clients should not be forced to depend upon interfaces that they do not use."
+                    </b>
+                    <span class="accordion__icon"></span>
+                  </span>
+                  <span class="accordion__content">
+                    <img src="assets/img/meme/interface-segregation.jpg" alt="interface-segregation-principle" class="accordion__img">
+                  </span>
+                </label>
+              </div>
+              <div class="accordion__item">
+                <input id="bayan-02" type="radio" name="bayan">
+                <label class="accordion__label" for="bayan-02">
+                  <span class="accordion__panel">
+                    <b class="accordion__title">
+                      The Dependency inversion principle: "Depend upon abstractions, not concretions."
+                    </b>
+                    <span class="accordion__icon"></span>
+                  </span>
+                  <span class="accordion__content">
+                    <img src="assets/img/meme/dependency-inversion.jpg" alt="dependency-inversion-principle" class="accordion__img">
+                  </span>
+                </label>
+              </div>
+            </div>
+          <!-- </div> -->
+        </div>
+      </article>
+    </section>
+  </main>
 </body>
 </html>

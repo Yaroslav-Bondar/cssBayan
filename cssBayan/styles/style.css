@@ -1,7 +1,20 @@
+@import "normalize.css";
 /* @media (min-width: 1920px) {
   selector:hover {
   } 
 } */
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.meme__content {
+  display: flex;
+  justify-content: center;
+}
+.meme__header {
+  text-align: center;
+}
 .accordion__container:hover .accordion__icon {
   display: block;
 }
