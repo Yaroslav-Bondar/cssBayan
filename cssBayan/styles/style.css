@@ -1,0 +1,38 @@
+/* @media (min-width: 1920px) {
+  selector:hover {
+  } 
+} */
+.accordion__container:hover .accordion__icon {
+  display: block;
+}
+.accordion__content {
+  display: none;
+}
+.accordion__item input[type="radio"]:checked ~ .accordion__label .accordion__content {
+  display: block;
+}
+.accordion__item input[type="radio"]:checked ~ .accordion__label .accordion__icon {
+  transform: rotateZ(180deg);
+}
+.accordion__label:hover .accordion__icon {
+  transform: rotateZ(180deg);
+}
+.accordion__panel:hover ~ .accordion__content {
+  display: block;
+}
+.accordion__panel {
+  display: flex;
+  align-items: center;
+}
+.accordion__icon {
+  display: none;
+  width: 10px;
+  height: 10px;
+  background: center / cover no-repeat url("../assets/img/icons/arrow-down.png");
+} 
+/* input[type="radio"]:checked .accordion__label .accordion__content {
+  display: none;
+} */
+/* input[type="radio"]:checked + .accordion__label {
+  display: none;
+} */
