@@ -1,0 +1,47 @@
+@import 'normalize/normalize.css';
+@import 'variables/variables.css';
+@import 'blocks/common.css';
+@import 'blocks/meme.css';
+@import 'blocks/accordion.css';
+
+@media (min-width: 820px) {
+  .meme__subtitle {
+    --font-size: 1.23rem;  
+  }
+  .accordion__label {
+    --font-size: 1.2rem;  
+  }
+  .accordion__container:hover .accordion__item .accordion__label .accordion__title {
+    color: var(--accordion-title-active-color);
+  }
+  .accordion__icon {
+    visibility: hidden;
+  }
+  .accordion__container:hover .accordion__icon {
+    visibility: visible;
+  }
+  .accordion__label:hover .accordion__icon {
+    transform: rotateX(180deg);
+  }
+  .accordion__label:hover .accordion__content {
+    max-height: 20rem;
+    margin: var(--accordion-padding) 0px;
+  }
+  .accordion__label:hover .accordion__img {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@media (min-width: 1920px) {
+  .meme__subtitle {
+    --font-size: 1.33rem;  
+  }
+  .accordion__label {
+    --font-size: 1.3rem;  
+  }
+}
+@media (max-width: 320px) {
+  .accordion__title {
+    text-align: justify;
+  }
+}

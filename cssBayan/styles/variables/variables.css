@@ -1,0 +1,24 @@
+:root {
+  --main-background-color: #333;
+  --main-font-color: #fff;
+  --accordion-panel-color: darkslateblue;
+  --accordion-title-color: #fff;
+  --accordion-title-active-color: black;
+  
+  --wrapper-max-width: 1920px;
+  --wrapper-min-width: 320px;
+  --container-max-width: 1320px;
+  --meme-content-width: 48rem;
+  
+  --container-padding: 0 15px;
+  --accordion-padding: 1em;
+  --accordion-icon-padding: 0.35em;
+}
+
+.accordion__label {
+  --font-size: 1rem;
+}
+
+.meme__subtitle {
+  --font-size: 1.04rem;
+}

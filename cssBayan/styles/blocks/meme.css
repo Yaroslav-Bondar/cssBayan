@@ -1,0 +1,21 @@
+.meme {
+  padding-top: 43px;
+  padding-bottom: 43px;
+}
+.meme__content {
+  display: flex;
+  justify-content: center;
+  max-width: var(--meme-content-width);
+  margin: 0 auto;
+}
+.meme__header {
+  text-align: center;
+}
+.meme__title {
+  margin: 0px 0px 0.5em 0px;
+  font-size: 2rem;
+}
+.meme__subtitle {
+  margin: 0px 0px 1.5em 0px;
+  font-size: var(--font-size);
+}
