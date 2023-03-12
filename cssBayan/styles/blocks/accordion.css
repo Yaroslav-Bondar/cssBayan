@@ -21,10 +21,21 @@
 }
 .accordion__label {
   font-size: var(--font-size);
+  transition: opacity .1s;
+}
+.accordion__label:active {
+  opacity: .8;
+}
+.accordion__label:active .accordion__title {
+  color: var(--accordion-title-color) !important;
+}
+.accordion__label:active .accordion__icon {
+  background: center / cover no-repeat url("../../assets/img/icons/arrow-down-white.png");
 }
 .accordion__title {
   margin-right: 15px;
-  transition: color .2s;
+  color: var(--accordion-title-color);
+  transition: color .1s;
 }
 .accordion__panel {
   display: flex;
@@ -34,6 +45,12 @@
   padding: var(--accordion-padding);
   background-color: var(--accordion-panel-color);
 }
+.accordion__icon {
+  padding: var(--accordion-icon-padding);
+  transition: transform .5s;
+  background: center / cover no-repeat url("../../assets/img/icons/arrow-down-black.png");
+  transition: background .1s;
+}
 .accordion__content {
   display: block;
   max-height: 0;
@@ -41,11 +58,6 @@
   text-align: center;
   transition: max-height .5s;
   overflow: hidden;
-}
-.accordion__icon {
-  padding: var(--accordion-icon-padding);
-  transition: transform .5s;
-  background: center / cover no-repeat url("../../assets/img/icons/arrow-down.png");
 }
 .accordion__img {
   display: block;
