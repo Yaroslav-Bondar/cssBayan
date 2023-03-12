@@ -1,74 +1,47 @@
-@import 'normalize.css';
-@import 'common.css';
-@import 'meme.css';
-/* @media (min-width: 1920px) {
-  selector:hover {
-  } 
-} */
-.accordion__container {
-  cursor: pointer;  /* fix it *** */
+@import 'normalize/normalize.css';
+@import 'variables/variables.css';
+@import 'blocks/common.css';
+@import 'blocks/meme.css';
+@import 'blocks/accordion.css';
+
+@media (min-width: 820px) {
+  .meme__subtitle {
+    --font-size: 1.23rem;  
+  }
+  .accordion__label {
+    --font-size: 1.2rem;  
+  }
+  .accordion__container:hover .accordion__item .accordion__label .accordion__title {
+    color: var(--accordion-title-active-color);
+  }
+  .accordion__icon {
+    visibility: hidden;
+  }
+  .accordion__container:hover .accordion__icon {
+    visibility: visible;
+  }
+  .accordion__label:hover .accordion__icon {
+    transform: rotateX(180deg);
+  }
+  .accordion__label:hover .accordion__content {
+    max-height: 20rem;
+    margin: var(--accordion-padding) 0px;
+  }
+  .accordion__label:hover .accordion__img {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
-.accordion__item input[type="radio"] {
-  /* appearance: none; */
+@media (min-width: 1920px) {
+  .meme__subtitle {
+    --font-size: 1.33rem;  
+  }
+  .accordion__label {
+    --font-size: 1.3rem;  
+  }
 }
-.accordion__item input[type="radio"]:checked ~ .accordion__label .accordion__content {
-  max-height: 20em;
+@media (max-width: 320px) {
+  .accordion__title {
+    text-align: justify;
+  }
 }
-.accordion__item input[type="radio"]:checked ~ .accordion__label .accordion__icon {
-  transform: rotateX(180deg);
-}
-.accordion__item input[type="radio"]:checked ~ .accordion__label .accordion__img {
-  transform: scale(1);
-  opacity: 1;
-}
-.accordion__container:hover .accordion__icon {
-  visibility: visible;
-}
-.accordion__label:hover .accordion__img {
-  transform: scale(1);
-  opacity: 1;
-}
-.accordion__label:hover .accordion__icon {
-  transform: rotateX(180deg);
-}
-.accordion__label:hover .accordion__content {
-  max-height: 20em;
-}
-.accordion__label {
-  font-size: 1.3em;
-}
-.accordion__title {
-  margin-right: 20px;
-}
-.accordion__panel {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.accordion__content {
-  display: block;
-  max-height: 0;
-  text-align: center;
-  transition: max-height .5s;
-  overflow: hidden;
-}
-.accordion__icon {
-  visibility: hidden;
-  padding: 7px;
-  transition: transform .5s;
-  background: center / cover no-repeat url("../assets/img/icons/arrow-down.png");
-}
-.accordion__img {
-  display: block;
-  max-width: 25em;
-  max-height: 20em;
-  margin: 0 auto;
-  transform: scale(0);
-  opacity: 0;
-  transition-property: opacity, transform;
-  transition-duration: 1.1s, .5s;
-}
-.accordion__img-item {
-  width: 100%;
-  height: 100%;
-} 

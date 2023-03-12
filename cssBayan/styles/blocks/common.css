@@ -1,0 +1,17 @@
+body {
+  height: 2000px;
+  background-color: var(--main-background-color);
+	color: var(--main-font-color);
+}
+.wrapper {
+  max-width: var(--wrapper-max-width);
+  min-width: var(--wrapper-min-width);
+  min-height: 100%;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+.container {
+  max-width: var(--container-max-width);
+  padding: var(--container-padding);
+  margin: 0 auto;
+}
